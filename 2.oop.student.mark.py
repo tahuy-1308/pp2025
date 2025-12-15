@@ -31,7 +31,7 @@ class Course():
         return  self.__id
     
     def __str__(self):
-        return f"ID: {self.id} | Name Course: {self.name}"
+        return f"ID: {self.__id} | Name Course: {self.__name}"
         
 
 def input_number_student():
@@ -59,7 +59,7 @@ def input_info_course():
 def list_students():
     print("------STUDENTS-------")
     for s in students:
-        print(f"ID: {s.get_name()} || Name: {s.get_id()} || DoB: {s.get_dob()}")
+        print(f"Name: {s.get_name()} || ID: {s.get_id()} || DoB: {s.get_dob()}")
 def list_course():
     print("-----COURSE---------")
     for c in courses:
